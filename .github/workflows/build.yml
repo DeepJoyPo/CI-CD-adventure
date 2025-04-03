@@ -24,3 +24,9 @@ jobs:
 
       - name: List Output Files
         run: ls -lah target/release/
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: my_rust_binary
+          path: target/release/CI-CD-adventure
