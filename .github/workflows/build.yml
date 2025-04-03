@@ -1,9 +1,7 @@
 name: Build Binary
 
 on:
-  push:
-    branches:
-      - init
+  release
 
 jobs:
   build:
